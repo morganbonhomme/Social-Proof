@@ -1,0 +1,135 @@
+body {
+  background: url("./images/bg-pattern-bottom-desktop.svg") right bottom no-repeat, url("./images/bg-pattern-top-desktop.svg") left top no-repeat;
+  height: calc(100vh - 200px);
+  margin: 100px 180px 100px 180px;
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "title rating" "reviews reviews";
+}
+
+div.title {
+  grid-area: title;
+  padding-right: 40px;
+}
+div.title h1 {
+  color: #502050;
+  font-size: 3em;
+  margin-bottom: 10px;
+  line-height: 110%;
+}
+div.title p {
+  color: #937b92;
+  line-height: 175%;
+}
+
+div.rating {
+  grid-area: rating;
+  align-self: top;
+  margin-top: 40px;
+  margin-bottom: 70px;
+  height: 230px;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "first" "second" "third";
+}
+div.rating div {
+  width: 450px;
+  height: 60px;
+  background-color: #f7f2f7;
+  border-radius: 10px;
+  color: #502050;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+div.rating .first {
+  grid-area: first;
+  justify-self: start;
+}
+div.rating .second {
+  grid-area: second;
+  justify-self: center;
+}
+div.rating .third {
+  grid-area: third;
+  justify-self: end;
+}
+div.rating .stars {
+  float: left;
+  width: 40%;
+  line-height: 65px;
+  margin: 0px;
+  padding: 0px;
+}
+div.rating .stars img {
+  margin: 0 3px;
+}
+div.rating p {
+  float: left;
+  width: 60%;
+  text-align: left;
+  line-height: 60px;
+  margin: 0px;
+  padding: 0px;
+}
+
+div.reviews {
+  grid-area: reviews;
+  display: flex;
+  justify-content: space-between;
+}
+div.reviews img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  float: left;
+  margin-top: 30px;
+}
+div.reviews .profile {
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+div.reviews .name {
+  color: white;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-bottom: 3px;
+}
+div.reviews .buyer {
+  color: #ee68a4;
+  font-weight: 400;
+  margin-top: 0px;
+  font-size: 0.9em;
+}
+div.reviews .feedback {
+  float: left;
+  font-size: 0.8em;
+  font-weight: 500;
+  color: white;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  margin-top: 20px;
+}
+div.reviews .box {
+  width: 31%;
+  background-color: #502050;
+  height: 250px;
+  border-radius: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-sizing: border-box;
+}
+div.reviews .second {
+  margin-top: 20px;
+}
+div.reviews .third {
+  margin-top: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */
