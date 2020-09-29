@@ -134,7 +134,9 @@ div.reviews .third {
 
 @media (max-device-width: 375px) {
   body {
-    background: none;
+    background: url("./images/bg-pattern-top-desktop.svg"), url("./images/bg-pattern-bottom-mobile.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0% -100px, right bottom;
     height: 100%;
     width: 100%;
     font-family: "Spartan", sans-serif;
