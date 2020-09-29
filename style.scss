@@ -15,8 +15,9 @@ $light-magenta: hsl(300, 24%, 96%);
 $white: hsl(0, 0%, 100%);
 
 body {
-  background: url('./images/bg-pattern-bottom-desktop.svg') right bottom no-repeat, url('./images/bg-pattern-top-desktop.svg') left top no-repeat;
-
+  background: url("./images/bg-pattern-bottom-desktop.svg") right bottom
+      no-repeat,
+    url("./images/bg-pattern-top-desktop.svg") left top no-repeat;
   height: calc(100vh - 200px);
   margin: 100px 180px 100px 180px;
   font-family: $font-stack;
@@ -123,7 +124,7 @@ div.reviews {
   .profile {
     float: left;
     margin-left: 20px;
-    margin-top:20px;
+    margin-top: 20px;
   }
 
   .name {
@@ -138,7 +139,6 @@ div.reviews {
     font-weight: $font-light;
     margin-top: 0px;
     font-size: 0.9em;
-
   }
 
   .feedback {
@@ -147,9 +147,8 @@ div.reviews {
     font-weight: $font-medium;
     color: $white;
     line-height: 150%;
-    letter-spacing: .05em;
-    margin-top: 20px
-
+    letter-spacing: 0.05em;
+    margin-top: 20px;
   }
 
   .box {
@@ -164,14 +163,148 @@ div.reviews {
     box-sizing: border-box;
   }
 
-  .first {
-  }
-
   .second {
     margin-top: 20px;
   }
 
   .third {
     margin-top: 40px;
+  }
+}
+
+@media (max-device-width: 375px) {
+  body {
+    background: none;
+    height: 100%;
+    width: 100%;
+    font-family: $font-stack;
+    font-size: $font-size;
+    display: block;
+    margin: 0 auto 0 auto;
+    padding: 0px;
+  }
+
+  div.title {
+    padding: 0;
+    margin: 100px 15px 30px 15px;
+
+    h1 {
+      color: $very-dark-magenta;
+      font-size: 2.5em;
+      padding: 0;
+      margin: 0;
+      line-height: 100%;
+      text-align: center;
+    }
+
+    p {
+      color: $dark-magenta;
+      line-height: 175%;
+      text-align: center;
+    }
+  }
+
+  div.rating {
+    padding: 0;
+    margin: 0;
+    margin: 10px 15px 30px 15px;
+    text-align: center;
+    display: inline;
+    
+
+    div.first, div.second, div.third {
+      margin: 0px 15px 15px 15px;
+      width: calc(100% - 30px);
+      height: 80px;
+      background-color: $light-magenta;
+      border-radius: 10px;
+      color: $very-dark-magenta;
+      font-weight: $font-bold;
+      font-size: 1em;
+    }
+
+    .stars {
+      float: none;
+      width: 100%;
+      height: 55px;
+      margin: 0px;
+      padding: 0;
+    }
+
+    .stars img {
+      margin: 0 3px;
+    }
+
+    p {
+      float: none;
+      width: 100%;
+      text-align: center;
+      line-height: 0px;
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+
+  div.reviews {
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-between;
+    margin: 10px 15px 30px 15px;
+
+    img {
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      float: left;
+      margin-top: 30px;
+    }
+
+    .profile {
+      float: left;
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+
+    .name {
+      color: $white;
+      font-weight: bold;
+      font-size: 0.9em;
+      margin-bottom: 3px;
+    }
+
+    .buyer {
+      color: $soft-pink;
+      font-weight: $font-light;
+      margin-top: 0px;
+      font-size: 0.9em;
+    }
+
+    .feedback {
+      float: left;
+      font-size: 0.9em;
+      font-weight: $font-medium;
+      color: $white;
+      line-height: 150%;
+      letter-spacing: 0.05em;
+      margin-top: 20px;
+    }
+
+    .box {
+      width: 100%;
+      background-color: $very-dark-magenta;
+      height: 250px;
+      border-radius: 10px;
+      padding: 0 30px;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+    }
+
+    .second {
+      margin-top: 0px;
+    }
+
+    .third {
+      margin-top: 0px;
+    }
   }
 }

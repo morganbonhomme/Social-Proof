@@ -132,4 +132,126 @@ div.reviews .third {
   margin-top: 40px;
 }
 
+@media (max-device-width: 375px) {
+  body {
+    background: none;
+    height: 100%;
+    width: 100%;
+    font-family: "Spartan", sans-serif;
+    font-size: 15px;
+    display: block;
+    margin: 0 auto 0 auto;
+    padding: 0px;
+  }
+
+  div.title {
+    padding: 0;
+    margin: 100px 15px 30px 15px;
+  }
+  div.title h1 {
+    color: #502050;
+    font-size: 2.5em;
+    padding: 0;
+    margin: 0;
+    line-height: 100%;
+    text-align: center;
+  }
+  div.title p {
+    color: #937b92;
+    line-height: 175%;
+    text-align: center;
+  }
+
+  div.rating {
+    padding: 0;
+    margin: 0;
+    margin: 10px 15px 30px 15px;
+    text-align: center;
+    display: inline;
+  }
+  div.rating div.first, div.rating div.second, div.rating div.third {
+    margin: 0px 15px 15px 15px;
+    width: calc(100% - 30px);
+    height: 80px;
+    background-color: #f7f2f7;
+    border-radius: 10px;
+    color: #502050;
+    font-weight: 700;
+    font-size: 1em;
+  }
+  div.rating .stars {
+    float: none;
+    width: 100%;
+    height: 55px;
+    margin: 0px;
+    padding: 0;
+  }
+  div.rating .stars img {
+    margin: 0 3px;
+  }
+  div.rating p {
+    float: none;
+    width: 100%;
+    text-align: center;
+    line-height: 0px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  div.reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 15px 30px 15px;
+  }
+  div.reviews img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    float: left;
+    margin-top: 30px;
+  }
+  div.reviews .profile {
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  div.reviews .name {
+    color: white;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-bottom: 3px;
+  }
+  div.reviews .buyer {
+    color: #ee68a4;
+    font-weight: 400;
+    margin-top: 0px;
+    font-size: 0.9em;
+  }
+  div.reviews .feedback {
+    float: left;
+    font-size: 0.9em;
+    font-weight: 500;
+    color: white;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    margin-top: 20px;
+  }
+  div.reviews .box {
+    width: 100%;
+    background-color: #502050;
+    height: 250px;
+    border-radius: 10px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  div.reviews .second {
+    margin-top: 0px;
+  }
+  div.reviews .third {
+    margin-top: 0px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
